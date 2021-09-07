@@ -119,7 +119,7 @@ select option:hover{
 }
 @media screen and (max-width: 600px){
     body{
-        font-size: 30px;
+        font-size: 10px;
     }
     #input-container {
         flex-direction: column;
