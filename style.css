@@ -6,6 +6,7 @@ body{
     font-family: sans-serif;
     align-items: center;
     font-size: 10px;
+    background: red;
 }
 h1 {
     color: white;
