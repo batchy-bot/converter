@@ -1,0 +1,144 @@
+body{
+    display: flexbox;
+    background-color: #333;
+    justify-content: center;
+    padding: 0;
+    font-family: sans-serif;
+    align-items: center;
+    font-size: 30px;
+}
+h1 {
+    color: white;
+    font-family: 'Courier New';
+    text-align: center;
+    font-size: 2em;
+}
+#calc-oa-container {
+    margin-top: 5%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;   
+    position: relative;
+}
+#calc-container {
+    display: flex;
+    background-color: rgb(59, 59, 59);
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    flex-direction: column;
+    box-shadow: 1px 20px 20px 1px rgba(20, 20, 20, .5);
+    padding-top: 10%;
+    width: 50vw;
+    height: 60vh;
+}
+label {
+    color: white;
+    text-transform: uppercase;
+}
+#select-a-unit {
+    background-color: white;
+    color: #333;
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    margin-top: 1%;
+}
+#input-container{
+    display: flex;
+    padding: 5%;
+    width: 90%;
+    height: 90%;
+    justify-content:center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+
+#left-input, #right-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    min-width: 100px;
+}
+* {
+    user-select: none;
+}
+#left-input input, #right-input input{
+    text-align: left;
+    height: 70px;
+    width: 100%;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #333;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    transition-timing-function: ease;
+    transition-duration: .5s;
+    transition-property: all;
+}
+#left-input input:focus,
+#right-input input:focus {
+    outline: none;
+    box-shadow: 2px 20px 20px 10px rgba(20, 20, 20, .5);
+    height: 80px;
+}
+#equal{
+    color: white;
+    font-size: 30px;
+    width: 10%;
+    margin: 2%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+select{
+    font-size: 90%;
+    width: 102%;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(128, 120, 120);
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+select:focus {
+    outline: none;
+}
+select option:hover{
+    background-color: red;
+}
+@media screen and (max-width: 600px){
+    #input-container {
+        flex-direction: column;
+        width: 80%;
+    }
+    #equal {
+        display: none;
+    }
+    #left-input, #right-input{
+        width: 90%;
+        justify-self:center;
+        align-self: center;
+    }
+    #calc-oa-container {
+        width: 91%;
+        justify-self: center;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #calc-oa-container h1 {
+        justify-self: center;
+        align-self: center;
+    }
+}
