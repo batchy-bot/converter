@@ -133,8 +133,11 @@ select option:hover{
         justify-self:center;
         align-self: center;
     }
+    #calc-container {
+        widh: 95%;
+    }
     #calc-oa-container {
-        width: 91%;
+        width: 95%;
         justify-self: center;
         align-self: center;
         justify-content: center;
