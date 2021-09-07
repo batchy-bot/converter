@@ -134,7 +134,8 @@ select option:hover{
         align-self: center;
     }
     #calc-container {
-        widh: 95%;
+        widh: 80vw;
+        height: 95vh;   
     }
     #calc-oa-container {
         width: 95%;
